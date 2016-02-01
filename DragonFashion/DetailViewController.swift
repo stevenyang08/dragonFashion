@@ -9,11 +9,12 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    @IBOutlet weak var labelView: UILabel!
+    var dorgan: Dragon!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        labelView.text = dorgan.name
     }
 
     override func didReceiveMemoryWarning() {
